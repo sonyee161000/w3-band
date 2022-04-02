@@ -1,0 +1,51 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+select,
+textarea,
+button {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="number"] ::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem;
+      grid-template-columns: 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: (fr)[10];
+      grid-template-columns: repeat(10, fr);
+  grid-column-gap: 5rem;
+}
+/*# sourceMappingURL=style.css.map */

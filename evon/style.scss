@@ -1,0 +1,70 @@
+$blue-color: #398fe5;
+$green-color: #11ad82;
+$gradient: linear-gradient(to right, #c33f58, #e58974);
+$primary-color: #e13c47;
+$text-color: #211254;
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin flexbox(
+  $align: flex-start,
+  $justify: flex-start,
+  $direction: row,
+  $wrap: nowrap
+) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@mixin maxwidth($value) {
+  @media screen and (max-width: $value) {
+    @content;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  // background-image: linear-gradient(to bottom right,#fdaefd, #404d7e);
+  // background-color: #ccc;
+  min-height: 100vh;
+  // color: red;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+select,
+textarea,
+button {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="number"] ::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
